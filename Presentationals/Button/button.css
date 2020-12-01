@@ -1,0 +1,31 @@
+.button {
+  font-family: "Vollkorn", serif;
+  font-weight: 700;
+  border: 0;
+  cursor: pointer;
+  display: inline-block;
+  line-height: 1;
+  padding: 10px 15px;
+  font-size: 15px;
+}
+.button-primary {
+  color: white;
+  background-color: #2a2d2e;
+}
+.button-secondary {
+  color: #333;
+  background-color: transparent;
+  box-shadow: #2a2d2e 0px 0px 0px 1px inset;
+}
+.button-small {
+  font-size: 12px;
+  padding: 10px 16px;
+}
+.button-medium {
+  font-size: 14px;
+  padding: 11px 20px;
+}
+.button-large {
+  font-size: 16px;
+  padding: 12px 24px;
+}
