@@ -13,6 +13,7 @@ const Caroussel = () => {
               alt="intérieur-salon"
               width={110}
               height={148}
+              loading="lazy"
             ></Image>
           </div>
           <div className={styles.img_2}>
@@ -21,6 +22,7 @@ const Caroussel = () => {
               alt="intérieur-salon"
               width={104}
               height={139}
+              loading="lazy"
             ></Image>
           </div>
           <div className={styles.img_3}>
@@ -29,6 +31,7 @@ const Caroussel = () => {
               alt="intérieur-salon"
               width={82}
               height={124}
+              loading="lazy"
             ></Image>
           </div>
         </div>
@@ -38,6 +41,7 @@ const Caroussel = () => {
             alt="intérieur-salon"
             width={310}
             height={232}
+            loading="lazy"
           ></Image>
         </div>
       </div>
@@ -49,6 +53,7 @@ const Caroussel = () => {
               alt="intérieur-salon"
               width={349}
               height={232}
+              loading="lazy"
             ></Image>
           </div>
           <div className={styles.img_4}>
@@ -57,6 +62,7 @@ const Caroussel = () => {
               alt="intérieur-salon"
               width={248}
               height={185}
+              loading="lazy"
             ></Image>
           </div>
         </div>
@@ -68,6 +74,7 @@ const Caroussel = () => {
             alt="intérieur-salon"
             width={103}
             height={155}
+            loading="lazy"
           ></Image>
         </div>
         <div className={styles.img_7}>
@@ -76,6 +83,7 @@ const Caroussel = () => {
             alt="intérieur-salon"
             width={98}
             height={147}
+            loading="lazy"
           ></Image>
         </div>
       </div>
@@ -87,6 +95,7 @@ const Caroussel = () => {
               alt="intérieur-salon"
               width={123}
               height={165}
+              loading="lazy"
             ></Image>
           </div>
           <div className={styles.img_9}>
@@ -95,6 +104,7 @@ const Caroussel = () => {
               alt="intérieur-salon"
               width={146}
               height={196}
+              loading="lazy"
             ></Image>
           </div>
         </div>
@@ -107,6 +117,7 @@ const Caroussel = () => {
               alt="intérieur-salon"
               width={138}
               height={207}
+              loading="lazy"
             ></Image>
           </div>
           <div className={styles.img_11}>
@@ -115,6 +126,7 @@ const Caroussel = () => {
               alt="intérieur-salon"
               width={150}
               height={230}
+              loading="lazy"
             ></Image>
           </div>
         </div>
@@ -127,6 +139,7 @@ const Caroussel = () => {
               alt="intérieur-salon"
               width={142}
               height={230}
+              loading="lazy"
             ></Image>
           </div>
           <div className={styles.img_13}>
@@ -135,6 +148,7 @@ const Caroussel = () => {
               alt="intérieur-salon"
               width={146}
               height={196}
+              loading="lazy"
             ></Image>
           </div>
         </div>
@@ -147,6 +161,7 @@ const Caroussel = () => {
               alt="intérieur-salon"
               width={146}
               height={196}
+              loading="lazy"
             ></Image>
           </div>
           <div className={styles.img_15}>
@@ -155,6 +170,7 @@ const Caroussel = () => {
               alt="intérieur-salon"
               width={142}
               height={230}
+              loading="lazy"
             ></Image>
           </div>
         </div>
@@ -167,6 +183,7 @@ const Caroussel = () => {
               alt="intérieur-salon"
               width={155}
               height={207}
+              loading="lazy"
             ></Image>
           </div>
           <div className={styles.img_17}>
@@ -175,6 +192,7 @@ const Caroussel = () => {
               alt="intérieur-salon"
               width={155}
               height={207}
+              loading="lazy"
             ></Image>
           </div>
         </div>
@@ -185,12 +203,14 @@ const Caroussel = () => {
           alt="intérieur-salon"
           width={146}
           height={196}
+          loading="lazy"
         ></Image>
         <Image
           src="/assets/img/caroussel-coiffure/4.jpg"
           alt="intérieur-salon"
           width={146}
           height={196}
+          loading="lazy"
         ></Image>
         <div className={styles.img_20}>
           <Image
@@ -198,6 +218,7 @@ const Caroussel = () => {
             alt="intérieur-salon"
             width={310}
             height={232}
+            loading="lazy"
           ></Image>
         </div>
       </div>
@@ -207,6 +228,7 @@ const Caroussel = () => {
           alt="intérieur-salon"
           width={295}
           height={220}
+          loading="lazy"
         ></Image>
       </div>
     </div>
