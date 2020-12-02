@@ -1,0 +1,43 @@
+.wrapper {
+  width: 90vw;
+  display: flex;
+  margin-top: 40px;
+}
+.img_container {
+  width: 45vw;
+  display: block;
+}
+.img_first_and_second {
+  display: flex;
+
+  margin-left: 50px;
+}
+.img_first {
+  margin-top: 95px;
+}
+.img_second {
+  margin-left: 50px;
+  margin-top: 50px;
+}
+.img_last {
+  display: flex;
+  justify-content: center;
+  margin-top: 25px;
+  margin-left: 150px;
+}
+.text_container {
+  width: 45vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.text {
+  display: flex;
+  align-items: center;
+  margin-right: 10vw;
+  margin-left: 10vw;
+  height: 100%;
+  font-size: 40px;
+  font-style: italic;
+  text-align: center;
+}

@@ -1,5 +1,4 @@
-.navbar-wrapper {
-  background-color: black;
+.wrapper {
   display: flex;
   justify-content: space-between;
   align-items: baseline;
@@ -7,7 +6,7 @@
   line-height: 0px;
 }
 
-.navbar-link {
+.link {
   font-size: 23px;
   margin-right: 15px;
   cursor: pointer;
@@ -17,14 +16,14 @@
   margin-right: 100px;
   cursor: pointer;
 }
-.navbar-link {
+.link {
   position: relative;
   text-transform: uppercase;
   text-decoration: none;
   padding-bottom: 15px;
 }
-.navbar-link:before,
-.navbar-link:after {
+.link:before,
+.link:after {
   content: "";
   position: absolute;
   bottom: 0;
@@ -33,7 +32,7 @@
   height: 2px;
   background-color: #e77817;
 }
-.navbar-link:before {
+.link:before {
   opacity: 0;
   -webkit-transform: translateY(-8px);
   transform: translateY(-8px);
@@ -45,7 +44,7 @@
   transition: transform 0s cubic-bezier(0.175, 0.885, 0.32, 1.275), opacity 0s,
     -webkit-transform 0s cubic-bezier(0.175, 0.885, 0.32, 1.275);
 }
-.navbar-link:after {
+.link:after {
   opacity: 0;
   -webkit-transform: translateY(4px);
   transform: translateY(4px);
@@ -58,16 +57,16 @@
   transition: transform 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275),
     opacity 0.2s, -webkit-transform 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
 }
-.navbar-link:hover:before,
-.navbar-link:hover:after,
-.navbar-link:focus:before,
-.navbar-link:focus:after {
+.link:hover:before,
+.link:hover:after,
+.link:focus:before,
+.link:focus:after {
   opacity: 1;
   -webkit-transform: translateY(0);
   transform: translateY(0);
 }
-.navbar-link:hover:before,
-.navbar-link:focus:before {
+.link:hover:before,
+.link:focus:before {
   -webkit-transition: opacity 0.2s,
     -webkit-transform 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
   transition: opacity 0.2s,
@@ -77,8 +76,8 @@
   transition: transform 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275),
     opacity 0.2s, -webkit-transform 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
 }
-.navbar-link:hover:after,
-.navbar-link:focus:after {
+.link:hover:after,
+.link:focus:after {
   -webkit-transition: opacity 0s 0.2s,
     -webkit-transform 0s 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
   transition: opacity 0s 0.2s,
