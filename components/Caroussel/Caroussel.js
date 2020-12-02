@@ -6,129 +6,178 @@ const Caroussel = () => {
   return (
     <div className={styles.wrapper}>
       <div className={styles.container_one}>
-        <Image
-          src="/assets/img/caroussel-coiffure/12.jpg"
-          alt="intérieur-salon"
-          width={110}
-          height={148}
-        ></Image>
-        <Image
-          src="/assets/img/caroussel-coiffure/19.jpg"
-          alt="intérieur-salon"
-          width={104}
-          height={139}
-        ></Image>
-        <Image
-          src="/assets/img/caroussel-coiffure/22.jpg"
-          alt="intérieur-salon"
-          width={82}
-          height={124}
-        ></Image>
-        <Image
-          src="/assets/img/caroussel-coiffure/2.jpg"
-          alt="intérieur-salon"
-          width={310}
-          height={232}
-        ></Image>
+        <div className={styles.first_of_three}>
+          <div className={styles.img_1}>
+            <Image
+              src="/assets/img/caroussel-coiffure/12.jpg"
+              alt="intérieur-salon"
+              width={110}
+              height={148}
+            ></Image>
+          </div>
+          <div className={styles.img_2}>
+            <Image
+              src="/assets/img/caroussel-coiffure/19.jpg"
+              alt="intérieur-salon"
+              width={104}
+              height={139}
+            ></Image>
+          </div>
+          <div className={styles.img_3}>
+            <Image
+              src="/assets/img/caroussel-coiffure/22.jpg"
+              alt="intérieur-salon"
+              width={82}
+              height={124}
+            ></Image>
+          </div>
+        </div>
+        <div className={styles.img_4}>
+          <Image
+            src="/assets/img/caroussel-coiffure/2.jpg"
+            alt="intérieur-salon"
+            width={310}
+            height={232}
+          ></Image>
+        </div>
       </div>
       <div className={styles.container_two}>
-        <Image
-          src="/assets/img/caroussel-coiffure/20.jpg"
-          alt="intérieur-salon"
-          width={349}
-          height={232}
-        ></Image>
-        <Image
-          src="/assets/img/caroussel-coiffure/18.jpg"
-          alt="intérieur-salon"
-          width={248}
-          height={185}
-        ></Image>
+        <div className={styles.container_two_img}>
+          <div className={styles.img_5}>
+            <Image
+              src="/assets/img/caroussel-coiffure/20.jpg"
+              alt="intérieur-salon"
+              width={349}
+              height={232}
+            ></Image>
+          </div>
+          <div className={styles.img_4}>
+            <Image
+              src="/assets/img/caroussel-coiffure/18.jpg"
+              alt="intérieur-salon"
+              width={248}
+              height={185}
+            ></Image>
+          </div>
+        </div>
       </div>
       <div className={styles.container_three}>
-        <Image
-          src="/assets/img/caroussel-coiffure/6.jpg"
-          alt="intérieur-salon"
-          width={103}
-          height={155}
-        ></Image>
-
-        <Image
-          src="/assets/img/caroussel-coiffure/11.jpg"
-          alt="intérieur-salon"
-          width={98}
-          height={147}
-        ></Image>
+        <div className={styles.img_6}>
+          <Image
+            src="/assets/img/caroussel-coiffure/6.jpg"
+            alt="intérieur-salon"
+            width={103}
+            height={155}
+          ></Image>
+        </div>
+        <div className={styles.img_7}>
+          <Image
+            src="/assets/img/caroussel-coiffure/11.jpg"
+            alt="intérieur-salon"
+            width={98}
+            height={147}
+          ></Image>
+        </div>
       </div>
       <div className={styles.container_four}>
-        <Image
-          src="/assets/img/caroussel-coiffure/7.jpg"
-          alt="intérieur-salon"
-          width={146}
-          height={196}
-        ></Image>
-        <Image
-          src="/assets/img/caroussel-coiffure/8.jpg"
-          alt="intérieur-salon"
-          width={123}
-          height={165}
-        ></Image>
+        <div className={styles.container_four_img}>
+          <div className={styles.img_8}>
+            <Image
+              src="/assets/img/caroussel-coiffure/8.jpg"
+              alt="intérieur-salon"
+              width={123}
+              height={165}
+            ></Image>
+          </div>
+          <div className={styles.img_9}>
+            <Image
+              src="/assets/img/caroussel-coiffure/7.jpg"
+              alt="intérieur-salon"
+              width={146}
+              height={196}
+            ></Image>
+          </div>
+        </div>
       </div>
       <div className={styles.container_five}>
-        <Image
-          src="/assets/img/caroussel-coiffure/9.jpg"
-          alt="intérieur-salon"
-          width={138}
-          height={207}
-        ></Image>
-        <Image
-          src="/assets/img/caroussel-coiffure/10.jpg"
-          alt="intérieur-salon"
-          width={172}
-          height={230}
-        ></Image>
+        <div className={styles.container_five_img}>
+          <div className={styles.img_10}>
+            <Image
+              src="/assets/img/caroussel-coiffure/9.jpg"
+              alt="intérieur-salon"
+              width={138}
+              height={207}
+            ></Image>
+          </div>
+          <div className={styles.img_11}>
+            <Image
+              src="/assets/img/caroussel-coiffure/10.jpg"
+              alt="intérieur-salon"
+              width={150}
+              height={230}
+            ></Image>
+          </div>
+        </div>
       </div>
       <div className={styles.container_six}>
-        <Image
-          src="/assets/img/caroussel-coiffure/17.jpg"
-          alt="intérieur-salon"
-          width={172}
-          height={230}
-        ></Image>
-        <Image
-          src="/assets/img/caroussel-coiffure/1.jpg"
-          alt="intérieur-salon"
-          width={146}
-          height={196}
-        ></Image>
+        <div className={styles.container_six_img}>
+          <div className={styles.img_12}>
+            <Image
+              src="/assets/img/caroussel-coiffure/17.jpg"
+              alt="intérieur-salon"
+              width={142}
+              height={230}
+            ></Image>
+          </div>
+          <div className={styles.img_13}>
+            <Image
+              src="/assets/img/caroussel-coiffure/1.jpg"
+              alt="intérieur-salon"
+              width={146}
+              height={196}
+            ></Image>
+          </div>
+        </div>
       </div>
       <div className={styles.container_seven}>
-        <Image
-          src="/assets/img/caroussel-coiffure/16.jpg"
-          alt="intérieur-salon"
-          width={155}
-          height={207}
-        ></Image>
-        <Image
-          src="/assets/img/caroussel-coiffure/14.jpg"
-          alt="intérieur-salon"
-          width={155}
-          height={207}
-        ></Image>
+        <div className={styles.container_seven_img}>
+          <div className={styles.img_14}>
+            <Image
+              src="/assets/img/caroussel-coiffure/23.jpg"
+              alt="intérieur-salon"
+              width={146}
+              height={196}
+            ></Image>
+          </div>
+          <div className={styles.img_15}>
+            <Image
+              src="/assets/img/caroussel-coiffure/24.jpg"
+              alt="intérieur-salon"
+              width={142}
+              height={230}
+            ></Image>
+          </div>
+        </div>
       </div>
       <div className={styles.container_height}>
-        <Image
-          src="/assets/img/caroussel-coiffure/23.jpg"
-          alt="intérieur-salon"
-          width={147}
-          height={196}
-        ></Image>
-        <Image
-          src="/assets/img/caroussel-coiffure/24.jpg"
-          alt="intérieur-salon"
-          width={172}
-          height={230}
-        ></Image>
+        <div className={styles.container_height_img}>
+          <div className={styles.img_16}>
+            <Image
+              src="/assets/img/caroussel-coiffure/16.jpg"
+              alt="intérieur-salon"
+              width={155}
+              height={207}
+            ></Image>
+          </div>
+          <div className={styles.img_17}>
+            <Image
+              src="/assets/img/caroussel-coiffure/14.jpg"
+              alt="intérieur-salon"
+              width={155}
+              height={207}
+            ></Image>
+          </div>
+        </div>
       </div>
       <div className={styles.container_nine}>
         <Image
@@ -143,6 +192,14 @@ const Caroussel = () => {
           width={146}
           height={196}
         ></Image>
+        <div className={styles.img_20}>
+          <Image
+            src="/assets/img/caroussel-coiffure/21.jpg"
+            alt="intérieur-salon"
+            width={310}
+            height={232}
+          ></Image>
+        </div>
       </div>
       <div className={styles.container_ten}>
         <Image
@@ -150,13 +207,6 @@ const Caroussel = () => {
           alt="intérieur-salon"
           width={295}
           height={220}
-        ></Image>
-
-        <Image
-          src="/assets/img/caroussel-coiffure/21.jpg"
-          alt="intérieur-salon"
-          width={310}
-          height={232}
         ></Image>
       </div>
     </div>
