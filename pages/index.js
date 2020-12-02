@@ -1,4 +1,7 @@
 import Head from "next/head";
+import Caroussel from "../components/Caroussel/Caroussel";
+import Informations from "../components/Informations/Informations";
+import NavBar from "../Presentationals/Navbar/NavBar";
 import styles from "../styles/Home.module.css";
 
 export default function Home() {
@@ -8,6 +11,9 @@ export default function Home() {
         <title>Coiffures de Marc</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
+      <NavBar />
+      <Informations />
+      <Caroussel />
     </div>
   );
 }
