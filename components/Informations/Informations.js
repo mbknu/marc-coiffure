@@ -2,7 +2,6 @@ import React from "react";
 import Image from "next/image";
 
 import styles from "./informations.module.css";
-// import interiorSaloon from "../../assets/img/interieur-salon.jpg";
 
 const Informations = () => {
   return (

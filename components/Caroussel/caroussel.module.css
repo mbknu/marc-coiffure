@@ -1,0 +1,61 @@
+.wrapper {
+  border: 1px solid red;
+  width: 75vw;
+  height: 500px;
+  margin-top: 30px;
+  display: flex;
+  overflow-x: auto;
+  scroll-snap-points-x: repeat(300px);
+  scroll-snap-type: mandatory;
+}
+
+.wrapper > div {
+  flex-shrink: 0;
+  width: 300px;
+}
+.wrapper::-webkit-scrollbar {
+  width: 1em;
+  height: 7px;
+}
+
+.wrapper::-webkit-scrollbar-thumb {
+  border-radius: 6px;
+  background-color: #e77817;
+  outline: none;
+}
+
+.wrapper::-webkit-scrollbar:vertical {
+  display: none;
+}
+
+.container_one {
+  border: 1px solid red;
+}
+.container_two {
+  border: 1px solid red;
+  width: 1000px;
+}
+.container_three {
+  border: 1px solid red;
+}
+.container_four {
+  border: 1px solid red;
+}
+.container_five {
+  border: 1px solid red;
+}
+.container_six {
+  border: 1px solid red;
+}
+.container_seven {
+  border: 1px solid red;
+}
+.container_height {
+  border: 1px solid red;
+}
+.container_nine {
+  border: 1px solid red;
+}
+.container_ten {
+  border: 1px solid red;
+}
