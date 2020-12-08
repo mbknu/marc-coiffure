@@ -80,7 +80,6 @@
   width: 90vw;
   display: flex;
   justify-content: space-around;
-  margin-top: 50px;
 }
 .text_information {
   margin-bottom: 0;
@@ -93,5 +92,9 @@
   margin-top: 0;
 }
 .container {
+  margin-right: 15px;
   width: 400px;
+}
+.test {
+  margin-bottom: 15px;
 }

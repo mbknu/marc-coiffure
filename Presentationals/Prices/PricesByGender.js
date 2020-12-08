@@ -6,8 +6,6 @@ const PricesByGender = ({ women, men }) => {
   const [menHairCut, setMenHairCut] = useState(false);
   const [womenHairCut, setWomenHairCut] = useState(false);
 
-  console.log({ women, men });
-
   const showWomenPrices = women[0].map((cut) => {
     return (
       <p className={styles.text_information}>
@@ -58,7 +56,7 @@ const PricesByGender = ({ women, men }) => {
 
   return (
     <div>
-      <div classname={styles.select_gender}>
+      <div style={{ marginBottom: "20px" }}>
         <a
           className={styles.gender}
           onClick={() => {
