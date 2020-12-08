@@ -1,0 +1,97 @@
+.gender {
+  font-size: 23px;
+  margin-right: 15px;
+  cursor: pointer;
+}
+.gender {
+  position: relative;
+  text-transform: uppercase;
+  text-decoration: none;
+  padding-bottom: 1px;
+}
+.gender:before,
+.gender:after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 2px;
+  background-color: #e77817;
+}
+.gender:before {
+  opacity: 0;
+  -webkit-transform: translateY(-8px);
+  transform: translateY(-8px);
+  -webkit-transition: opacity 0s,
+    -webkit-transform 0s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  transition: opacity 0s,
+    -webkit-transform 0s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  transition: transform 0s cubic-bezier(0.175, 0.885, 0.32, 1.275), opacity 0s;
+  transition: transform 0s cubic-bezier(0.175, 0.885, 0.32, 1.275), opacity 0s,
+    -webkit-transform 0s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+.gender:after {
+  opacity: 0;
+  -webkit-transform: translateY(4px);
+  transform: translateY(4px);
+  -webkit-transition: opacity 0.2s,
+    -webkit-transform 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  transition: opacity 0.2s,
+    -webkit-transform 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  transition: transform 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275),
+    opacity 0.2s;
+  transition: transform 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275),
+    opacity 0.2s, -webkit-transform 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+.gender:hover:before,
+.gender:hover:after,
+.gender:focus:before,
+.gender:focus:after {
+  opacity: 1;
+  -webkit-transform: translateY(0);
+  transform: translateY(0);
+}
+.gender:hover:before,
+.gender:focus:before {
+  -webkit-transition: opacity 0.2s,
+    -webkit-transform 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  transition: opacity 0.2s,
+    -webkit-transform 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  transition: transform 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275),
+    opacity 0.2s;
+  transition: transform 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275),
+    opacity 0.2s, -webkit-transform 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+.gender:hover:after,
+.gender:focus:after {
+  -webkit-transition: opacity 0s 0.2s,
+    -webkit-transform 0s 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  transition: opacity 0s 0.2s,
+    -webkit-transform 0s 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  transition: transform 0s 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275),
+    opacity 0s 0.2s;
+  transition: transform 0s 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275),
+    opacity 0s 0.2s,
+    -webkit-transform 0s 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.wrapper {
+  width: 90vw;
+  display: flex;
+  justify-content: space-around;
+  margin-top: 50px;
+}
+.text_information {
+  margin-bottom: 0;
+  margin-top: 0;
+  display: flex;
+  justify-content: space-between;
+}
+.price_information {
+  margin-bottom: 0;
+  margin-top: 0;
+}
+.container {
+  width: 400px;
+}
