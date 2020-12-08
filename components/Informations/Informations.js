@@ -14,6 +14,7 @@ const Informations = () => {
               alt="intérieur-salon"
               width={400}
               height={350}
+              loading="lazy"
             ></Image>
           </div>
           <div className={styles.img_second}>
@@ -22,6 +23,7 @@ const Informations = () => {
               alt="intérieur-salon"
               width={400}
               height={350}
+              loading="lazy"
             ></Image>
           </div>
         </div>
@@ -31,6 +33,7 @@ const Informations = () => {
             alt="intérieur-salon"
             width={400}
             height={350}
+            loading="lazy"
           ></Image>
         </div>
       </div>

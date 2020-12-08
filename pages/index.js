@@ -2,6 +2,10 @@ import Head from "next/head";
 import Caroussel from "../components/Caroussel/Caroussel";
 import Informations from "../components/Informations/Informations";
 import NavBar from "../Presentationals/Navbar/NavBar";
+import PricesList from "../Presentationals/Prices/PricesList";
+import ShopList from "../Presentationals/Shop/ShopList";
+import Timetable from "../Presentationals/Timetable/Timetable";
+
 import styles from "../styles/Home.module.css";
 
 export default function Home() {
@@ -14,6 +18,9 @@ export default function Home() {
       <NavBar />
       <Informations />
       <Caroussel />
+      <Timetable />
+      <PricesList />
+      <ShopList />
     </div>
   );
 }
