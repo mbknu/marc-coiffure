@@ -71,7 +71,7 @@ const womanhaircut = [
       price: 48,
     },
     {
-      forfaittext: "Shampooing / Coupe / coiffage Cheveux Longs",
+      forfait_text: "Shampooing / Coupe / coiffage Cheveux Longs",
       price: 53,
     },
   ],

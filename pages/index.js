@@ -2,7 +2,7 @@ import Head from "next/head";
 import Caroussel from "../components/Caroussel/Caroussel";
 import Informations from "../components/Informations/Informations";
 import NavBar from "../Presentationals/Navbar/NavBar";
-import Prices from "../Presentationals/Prices/Prices";
+import PricesList from "../Presentationals/Prices/PricesList";
 import ShopList from "../Presentationals/Shop/ShopList";
 import Timetable from "../Presentationals/Timetable/Timetable";
 
@@ -19,7 +19,7 @@ export default function Home() {
       <Informations />
       <Caroussel />
       <Timetable />
-      <Prices />
+      <PricesList />
       <ShopList />
     </div>
   );
