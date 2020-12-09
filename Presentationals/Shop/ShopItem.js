@@ -4,11 +4,11 @@ import Image from "next/image";
 
 import styles from "./shopItem.module.css";
 
-const ShopItem = ({ products }) => {
-  const [products0, setproducts0] = useState(true);
-  const [products1, setproducts1] = useState(false);
+const ShopItem = ({ cdmProduct, joicoProduct }) => {
+  const [cdm, setCdm] = useState(true);
+  const [joico, setJoico] = useState(false);
 
-  const productList = products[0].map((element) => {
+  const cdmList = cdmProduct.map((element) => {
     return (
       <div className={styles.item}>
         <p>{element.title}</p>
@@ -25,12 +25,13 @@ const ShopItem = ({ products }) => {
       </div>
     );
   });
+  console.log("joico", joicoProduct);
 
-  const productList1 = products[1].map((element) => {
+  const joicoList = joicoProduct[0].map((element) => {
     return (
       <div className={styles.item}>
         <p>{element.title}</p>
-        <p>{element.text}</p>
+        {/* <p>{element.text}</p> */}
         <Image
           src={`/${element.image}`}
           alt="image-product"
@@ -38,26 +39,32 @@ const ShopItem = ({ products }) => {
           height={148}
           loading="lazy"
         ></Image>
-
-        <p>{element.price} €</p>
       </div>
     );
   });
   return (
-    <>
-      <div className={styles.container}>{products0 && productList}</div>
-      <div className={styles.container}>
-        {products1 && productList1}
-        <button
-          onClick={() => {
-            setproducts0(false);
-            setproducts1(true);
-          }}
-        >
-          TEST
-        </button>
-      </div>
-    </>
+    <div className={styles.wrapper}>
+      <a
+        className={styles.brand}
+        onClick={() => {
+          setCdm(true);
+          setJoico(false);
+        }}
+      >
+        CDM
+      </a>
+      <a
+        className={styles.brand}
+        onClick={() => {
+          setCdm(false);
+          setJoico(true);
+        }}
+      >
+        JOICO
+      </a>
+      <div className={styles.container}>{cdm && cdmList}</div>
+      <div className={styles.container}>{joico && joicoList}</div>
+    </div>
   );
 };
 export default ShopItem;
