@@ -6,53 +6,69 @@ const PricesByGender = ({ women, men }) => {
   const [menHairCut, setMenHairCut] = useState(false);
   const [womenHairCut, setWomenHairCut] = useState(false);
 
-  const showWomenPrices = women[0].map((cut) => {
-    return (
-      <p className={styles.text_information}>
-        {cut.text} <p className={styles.price_information}>{cut.price} € </p>
-      </p>
-    );
-  });
-  const showWomenForfeit = women[1].map((cut) => {
-    return (
-      <p className={styles.text_information}>
-        {cut.forfait_text}{" "}
-        <p className={styles.price_information}>{cut.price} € </p>
-      </p>
-    );
-  });
-  const showWomenForfeitUnder20 = women[2].map((cut) => {
-    return (
-      <p className={styles.text_information}>
-        {cut.forfait_under20years_text}{" "}
-        <p className={styles.price_information}>{cut.price} € </p>
-      </p>
-    );
-  });
+  const showWomenPrices = women[0]
+    .sort((a, b) => parseFloat(a.price) - parseFloat(b.price))
+    .map((cut) => {
+      return (
+        <p className={styles.text_information}>
+          {cut.text} <p className={styles.price_information}>{cut.price} € </p>
+        </p>
+      );
+    });
 
-  const showMenPrices = men[0].map((cut) => {
-    return (
-      <p className={styles.text_information}>
-        {cut.text} <p className={styles.price_information}>{cut.price} € </p>
-      </p>
-    );
-  });
-  const showMenForfeit = men[1].map((cut) => {
-    return (
-      <p className={styles.text_information}>
-        {cut.forfait_text}{" "}
-        <p className={styles.price_information}>{cut.price} € </p>
-      </p>
-    );
-  });
-  const showMenForfeitUnder20 = men[2].map((cut) => {
-    return (
-      <p className={styles.text_information}>
-        {cut.forfait_under20years_text}{" "}
-        <p className={styles.price_information}>{cut.price} € </p>
-      </p>
-    );
-  });
+  const showWomenForfeit = women[1]
+    .sort((a, b) => parseFloat(a.price) - parseFloat(b.price))
+    .map((cut) => {
+      return (
+        <p className={styles.text_information}>
+          {cut.forfait_text}{" "}
+          <p className={styles.price_information}>{cut.price} € </p>
+        </p>
+      );
+    });
+
+  const showWomenForfeitUnder20 = women[2]
+    .sort((a, b) => parseFloat(a.price) - parseFloat(b.price))
+    .map((cut) => {
+      return (
+        <p className={styles.text_information}>
+          {cut.forfait_under20years_text}{" "}
+          <p className={styles.price_information}>{cut.price} € </p>
+        </p>
+      );
+    });
+
+  const showMenPrices = men[0]
+    .sort((a, b) => parseFloat(a.price) - parseFloat(b.price))
+    .map((cut) => {
+      return (
+        <p className={styles.text_information}>
+          {cut.text} <p className={styles.price_information}>{cut.price} € </p>
+        </p>
+      );
+    });
+
+  const showMenForfeit = men[1]
+    .sort((a, b) => parseFloat(a.price) - parseFloat(b.price))
+    .map((cut) => {
+      return (
+        <p className={styles.text_information}>
+          {cut.forfait_text}{" "}
+          <p className={styles.price_information}>{cut.price} € </p>
+        </p>
+      );
+    });
+
+  const showMenForfeitUnder20 = men[2]
+    .sort((a, b) => parseFloat(a.price) - parseFloat(b.price))
+    .map((cut) => {
+      return (
+        <p className={styles.text_information}>
+          {cut.forfait_under20years_text}{" "}
+          <p className={styles.price_information}>{cut.price} € </p>
+        </p>
+      );
+    });
 
   return (
     <div>
@@ -83,7 +99,7 @@ const PricesByGender = ({ women, men }) => {
             <div className={styles.container}>{showWomenPrices}</div>
             <div className={styles.container}>FORFAIT : {showWomenForfeit}</div>
             <div className={styles.container}>
-              - 20 ans : {showWomenForfeitUnder20}
+              FORFAIT - 20 ans : {showWomenForfeitUnder20}
             </div>
           </div>
         )}
@@ -94,7 +110,7 @@ const PricesByGender = ({ women, men }) => {
             <div className={styles.container}>{showMenPrices}</div>
             <div className={styles.container}>FORFAIT : {showMenForfeit}</div>
             <div className={styles.container}>
-              - 20 ans : {showMenForfeitUnder20}
+              FORFAIT - 20 ans : {showMenForfeitUnder20}
             </div>
           </div>
         )}
