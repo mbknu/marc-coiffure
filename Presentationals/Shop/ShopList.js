@@ -1,13 +1,14 @@
-import React from 'react'
-import SHOP from "../../constants/SHOP";
-import ShopItem from './ShopItem';
+import React from "react";
+import CDM from "../../constants/cdm";
+import JOICO from "../../constants/joico";
+import ShopItem from "./ShopItem";
 
 const ShopList = () => {
-    return (
-        <div>
-            <ShopItem products={SHOP} />
-        </div>
-    )
-}
+  return (
+    <div>
+      <ShopItem cdmProduct={CDM} joicoProduct={JOICO} />
+    </div>
+  );
+};
 
-export default ShopList
+export default ShopList;

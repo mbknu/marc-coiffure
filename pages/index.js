@@ -1,6 +1,7 @@
 import Head from "next/head";
 import Caroussel from "../components/Caroussel/Caroussel";
 import Informations from "../components/Informations/Informations";
+import Footer from "../Presentationals/Footer/Footer";
 import NavBar from "../Presentationals/Navbar/NavBar";
 import PricesList from "../Presentationals/Prices/PricesList";
 import ShopList from "../Presentationals/Shop/ShopList";
@@ -21,6 +22,7 @@ export default function Home() {
       <Timetable />
       <PricesList />
       <ShopList />
+      <Footer />
     </div>
   );
 }
